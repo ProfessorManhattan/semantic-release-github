@@ -1,7 +1,7 @@
 {
-  "name": "@semantic-release/github",
+  "name": "semantic-release-github",
   "description": "semantic-release plugin to publish a GitHub release and comment on released Pull Requests/Issues",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "author": "Pierre Vanduynslager (https://twitter.com/@pvdlg_)",
   "ava": {
     "files": [
@@ -54,6 +54,53 @@
     "lib",
     "index.js"
   ],
+  "blueprint": {
+    "customPackageName": "semantic-release-github",
+    "description": "The official GitHub plugin, modified to accept `repositoryUrl` as a parameter",
+    "group": "npm",
+    "name": "Semantic Release GitHub",
+    "overview": "This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/professormanhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.",
+    "repository": {
+      "github": "https://github.com/ProfessorManhattan/semantic-release-github",
+      "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/semantic-release-github"
+    },
+    "jsonOverrides": {
+      "package.json": {
+        "ava": {
+          "files": [
+            "test/**/*.test.js"
+          ]
+        },
+        "nyc": {
+          "include": [
+            "lib/**/*.js",
+            "index.js"
+          ],
+          "reporter": [
+            "json",
+            "text",
+            "html"
+          ],
+          "all": true
+        },
+        "files": [
+          "lib",
+          "index.js"
+        ],
+        "main": "index.js",
+        "contributors": [
+          "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
+          "Gregor Martynus (https://twitter.com/gr2m)",
+          "Pierre Vanduynslager (https://twitter.com/@pvdlg)"
+        ],
+      }
+    },
+    "slug": "semantic-release-github",
+    "subgroup": "plugin",
+    "subheader_description": "A tweaked version of the official `@semantic-release/github` plugin that allows you to pass in `repositoryUrl` as a plugin configuration instead of a CLI parameter",
+    "title": "Semantic Release GitHub"
+  },
+
   "homepage": "https://github.com/semantic-release/github#readme",
   "keywords": [
     "git",

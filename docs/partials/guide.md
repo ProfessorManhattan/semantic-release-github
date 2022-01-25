@@ -1,13 +1,7 @@
-# @semantic-release/github
+## Summary
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to publish a
 [GitHub release](https://help.github.com/articles/about-releases) and comment on released Pull Requests/Issues.
-
-[![Build Status](https://github.com/semantic-release/github/workflows/Test/badge.svg)](https://github.com/semantic-release/github/actions?query=workflow%3ATest+branch%3Amaster)
-
-[![npm latest version](https://img.shields.io/npm/v/@semantic-release/github/latest.svg)](https://www.npmjs.com/package/@semantic-release/github)
-[![npm next version](https://img.shields.io/npm/v/@semantic-release/github/next.svg)](https://www.npmjs.com/package/@semantic-release/github)
-[![npm beta version](https://img.shields.io/npm/v/@semantic-release/github/beta.svg)](https://www.npmjs.com/package/@semantic-release/github)
 
 | Step               | Description                                                                                                                                                                                                                              |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -20,7 +14,7 @@
 ## Install
 
 ```bash
-$ npm install @semantic-release/github -D
+$ npm install semantic-release-github -D
 ```
 
 ## Usage
@@ -32,7 +26,8 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    ["@semantic-release/github", {
+    ["semantic-release-github", {
+      "repositoryUrl": "https://github.com/professormanhattan/semantic-release-github",
       "assets": [
         {"path": "dist/asset.min.css", "label": "CSS distribution"},
         {"path": "dist/asset.min.js", "label": "JS distribution"}
