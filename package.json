@@ -63,7 +63,6 @@
   "peerDependencies": {
     "semantic-release": ">=18.0.0-beta.1"
   },
-  "optionalDependencies": {},
   "devDependencies": {
     "@megabytelabs/jest-preset": "^1.0.0",
     "@types/node": "^16.11.6",
@@ -75,12 +74,12 @@
     "codecov": "3.8.3",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
-    "eslint-config-strict-mode": "^1.0.0",
+    "eslint-config-strict-mode": "^1.0.28",
     "nock": "13.2.2",
     "nyc": "15.1.0",
     "proxy": "1.0.2",
     "proxyquire": "2.1.3",
-    "semantic-release-config": "^0.0.2",
+    "semantic-release-config": "^0.0.4",
     "server-destroy": "1.0.1",
     "sinon": "12.0.1",
     "sleekfast": "^0.0.1",
