@@ -29,23 +29,23 @@
     </a>
   </h4>
   <p align="center">
-    <a href="website.npm_package/semantic-release-github" target="_blank">
+    <a href="website.npm_package/semantic-release-gh" target="_blank">
       <img alt="Version: 0.0.1" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000&style=for-the-badge" />
     </a>
     <a href="https://gitlab.com/megabyte-labs/npm/semantic-release-github/commits/master" title="GitLab CI build status" target="_blank">
       <img alt="Build status" src="https://gitlab.com/megabyte-labs/npm/semantic-release-github/badges/master/pipeline.svg">
     </a>
-    <a href="website.npm_package/semantic-release-github" title="Dependency status reported by Depfu">
+    <a href="website.npm_package/semantic-release-gh" title="Dependency status reported by Depfu">
       <img alt="Dependency status reported by Depfu" src="https://img.shields.io/depfu/megabyte-labs/npm-semantic-release-github?style=for-the-badge&logo=npm" />
     </a>
-    <a href="website.npm_package/semantic-release-github" title="Zip file size">
-      <img alt="Zip file size" src="https://img.shields.io/bundlephobia/minzip/semantic-release-github?style=bad_style&logo=npm" />
+    <a href="website.npm_package/semantic-release-gh" title="Zip file size">
+      <img alt="Zip file size" src="https://img.shields.io/bundlephobia/minzip/semantic-release-gh?style=bad_style&logo=npm" />
     </a>
-    <a href="" title="Total downloads of semantic-release-github on npmjs.org">
-      <img alt="Total downloads of semantic-release-github on npmjs.org" src="https://img.shields.io/npm/dt/semantic-release-github?logo=npm&style=for-the-badge&logo=npm" />
+    <a href="" title="Total downloads of semantic-release-gh on npmjs.org">
+      <img alt="Total downloads of semantic-release-gh on npmjs.org" src="https://img.shields.io/npm/dt/semantic-release-gh?logo=npm&style=for-the-badge&logo=npm" />
     </a>
-    <a href="website.npm_package/semantic-release-github" title="Number of vulnerabilities from Snyk scan on semantic-release-github">
-      <img alt="Number of vulnerabilities from Snyk scan on semantic-release-github" src="https://img.shields.io/snyk/vulnerabilities/npm/semantic-release-github?style=for-the-badge&logo=npm" />
+    <a href="website.npm_package/semantic-release-gh" title="Number of vulnerabilities from Snyk scan on semantic-release-gh">
+      <img alt="Number of vulnerabilities from Snyk scan on semantic-release-gh" src="https://img.shields.io/snyk/vulnerabilities/npm/semantic-release-gh?style=for-the-badge&logo=npm" />
     </a>
     <a href="website.documentation/npm" target="_blank">
       <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?logo=readthedocs&style=for-the-badge" />
@@ -56,7 +56,7 @@
   </p>
 </div>
 
-> </br><h3 align="center">**The official GitHub plugin, modified to accept &#x60;repositoryUrl&#x60; as a parameter**</h3></br>
+> </br><h3 align="center">**The official GitHub plugin, modified to accept repositoryUrl as a parameter**</h3></br>
 
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -90,7 +90,7 @@
 
 ## Overview
 
-This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/professormanhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.
+This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 

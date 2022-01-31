@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "semantic-release-github",
+  "name": "semantic-release-gh",
   "version": "0.0.1",
   "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
   "license": "MIT",
@@ -75,12 +75,12 @@
     "codecov": "3.8.3",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
-    "eslint-config-strict-mode": "^1.0.28",
+    "eslint-config-strict-mode": "^1.0.0",
     "nock": "13.2.2",
     "nyc": "15.1.0",
     "proxy": "1.0.2",
     "proxyquire": "2.1.3",
-    "semantic-release-config": "^0.0.4",
+    "semantic-release-config": "^0.0.2",
     "server-destroy": "1.0.1",
     "sinon": "12.0.1",
     "sleekfast": "^0.0.1",
@@ -115,7 +115,7 @@
     ]
   },
   "blueprint": {
-    "customPackageName": "semantic-release-github",
+    "customPackageName": "semantic-release-gh",
     "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
     "group": "npm",
     "jsonOverrides": {
@@ -179,6 +179,7 @@
       "array-func/prefer-flat": "warn",
       "camelcase": "warn",
       "capitalized-comments": "warn",
+      "etc/no-assign-mutated-array": "off",
       "filenames/no-index": "warn",
       "fp/no-mutating-methods": "warn",
       "fp/no-mutation": "warn",
@@ -197,6 +198,8 @@
       "jsdoc/check-tag-names": "warn",
       "jsdoc/check-types": "warn",
       "jsdoc/require-jsdoc": "warn",
+      "jsdoc/require-param-description": "warn",
+      "jsdoc/require-param-type": "warn",
       "jsdoc/require-returns": "warn",
       "jsdoc/tag-lines": "warn",
       "line-comment-position": "warn",
@@ -212,6 +215,7 @@
       "no-secrets/no-secrets": "warn",
       "no-shadow": "warn",
       "no-undefined": "warn",
+      "no-underscore-dangle": "warn",
       "no-unused-vars": "warn",
       "no-warning-comments": "warn",
       "node/no-missing-require": "warn",
@@ -237,11 +241,7 @@
       "unicorn/prefer-number-properties": "warn",
       "unicorn/prefer-spread": "warn",
       "unicorn/prevent-abbreviations": "warn",
-      "yml/sort-keys": "warn",
-      "etc/no-assign-mutated-array": "off",
-      "jsdoc/require-param-description": "warn",
-      "jsdoc/require-param-type": "warn",
-      "no-underscore-dangle": "warn"
+      "yml/sort-keys": "warn"
     }
   },
   "funding": [
