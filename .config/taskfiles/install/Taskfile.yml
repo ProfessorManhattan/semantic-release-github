@@ -192,8 +192,8 @@ tasks:
 
   tslib:
     vars:
-      TSLIB_MSG: You can potentially optimize your bundle by setting `importHelpers` in compilerOptions
-        in tsconfig.json to `true`. After importHelpers is set to true, the taskfiles will automatically
+      TSLIB_MSG: You can potentially optimize your bundle by setting importHelpers in compilerOptions
+        in tsconfig.json to true. After importHelpers is set to true, the taskfiles will automatically
         install tslib.
     run: once
     log:
@@ -201,16 +201,16 @@ tasks:
       error: Failed to probe `tslib`
     cmds:
       - |
-        if [[ "$(jq -r '.dependencies.tslib' package.json)" == 'null' ]]; then
-          if [ "$(jq -r '.compilerOptions.importHelpers')" != 'true' ]; then
+        if [ "$(jq -r '.dependencies.tslib' package.json)" == 'null' ]; then
+          if [ "$(jq -r '.compilerOptions.importHelpers' tsconfig.json)" != 'true' ]; then
             .config/log info '{{.TSLIB_MSG}}'
           else
-            .config/log info 'Automatically installing `tslib` since `importHelpers` is set to true in tsconfig.json'
+            .config/log info 'Automatically installing tslib since importHelpers is set to true in tsconfig.json'
             {{.NPM_PROGRAM_LOCAL}} install --save tslib@latest
-            .config/log success 'Successfully installed `tslib`'
+            .config/log success 'Successfully installed tslib'
           fi
         else
-          task install:modules:local:sync -- "tslib"
+          .config/log info "Here"
+          task install:modules:local:sync -- tslib
+           .config/log info "After"
         fi
-    status:
-      - '[ ! -f tsconfig.json ]'

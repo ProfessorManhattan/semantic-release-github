@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "plugin-semantic-release-github"
 version = "0.0.1"
-description = "The official GitHub plugin, modified to accept &#x60;repositoryUrl&#x60; as a parameter"
+description = "The official GitHub plugin, modified to accept repositoryUrl as a parameter"
 authors = ["Brian Zalewski <brian@megabyte.space>"]
 license = "MIT"
 readme = "README.md"

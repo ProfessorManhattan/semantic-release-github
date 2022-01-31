@@ -7,7 +7,7 @@
   },
   "blueprint": {
     "customPackageName": "semantic-release-github",
-    "description": "The official GitHub plugin, modified to accept `repositoryUrl` as a parameter",
+    "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
     "group": "npm",
     "jsonOverrides": {
       "package.json": {
@@ -41,7 +41,7 @@
       }
     },
     "name": "Semantic Release GitHub",
-    "overview": "This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/professormanhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.",
+    "overview": "This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.",
     "repository": {
       "github": "https://github.com/ProfessorManhattan/semantic-release-github",
       "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/semantic-release-github"
@@ -87,9 +87,10 @@
     "mime": "^3.0.0",
     "p-filter": "^2.0.0",
     "p-retry": "^4.0.0",
+    "tslib": "^2.3.1",
     "url-join": "^4.0.0"
   },
-  "description": "The official GitHub plugin, modified to accept &#x60;repositoryUrl&#x60; as a parameter",
+  "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
   "devDependencies": {
     "@megabytelabs/jest-preset": "^1.0.0",
     "@types/node": "^16.11.6",
@@ -302,7 +303,6 @@
       "html"
     ]
   },
-  "optionalDependencies": {},
   "peerDependencies": {
     "semantic-release": ">=18.0.0-beta.1"
   },
