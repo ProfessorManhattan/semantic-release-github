@@ -273,7 +273,7 @@ tasks:
       - :install:software:vagrant
       - :install:software:virtualbox
     env:
-      # yYmllint disable-line rule:truthy
+      # yamllint disable-line rule:truthy
       OBJC_DISABLE_INITIALIZE_FORK_SAFETY: YES
     log:
       error: Errors encountered while running the `{{.CLI_ARGS}}` VirtualBox Molecule test
@@ -315,7 +315,7 @@ tasks:
       - :install:software:vagrant
       - :install:software:virtualbox
     env:
-      # yYmllint disable-line rule:truthy
+      # yamllint disable-line rule:truthy
       OBJC_DISABLE_INITIALIZE_FORK_SAFETY: YES
     log:
       error: Errors were encountered while running the `{{.CLI_ARGS}}` VirtualBox Molecule converge play
@@ -341,7 +341,7 @@ tasks:
     vars:
       MOLECULE_DATE:
         sh: date '+%Y-%m-%d'
-      # yYmllint disable-line rule:truthy
+      # yamllint disable-line rule:truthy
       OBJC_DISABLE_INITIALIZE_FORK_SAFETY: YES
     log:
       error: Errors were encountered while running the full E2E test (see `{{.MOLECULE_LOGS_PATH}}/{{.MOLECULE_DATE}}-default.txt` for details)
