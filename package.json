@@ -64,6 +64,7 @@
   "peerDependencies": {
     "semantic-release": ">=18.0.0-beta.1"
   },
+  "optionalDependencies": {},
   "devDependencies": {
     "@megabytelabs/jest-preset": "^1.0.0",
     "@types/node": "^16.11.6",
@@ -117,6 +118,9 @@
   "blueprint": {
     "customPackageName": "semantic-release-gh",
     "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
+    "github_id": "R_kgDOGw3kVA",
+    "gitlab_group_id": "",
+    "gitlab_project_id": "33109332",
     "group": "npm",
     "jsonOverrides": {
       "package.json": {
@@ -160,10 +164,7 @@
     "slug": "semantic-release-github",
     "subgroup": "plugin",
     "subheader_description": "A tweaked version of the official `@semantic-release/github` plugin that allows you to pass in `repositoryUrl` as a plugin configuration instead of a CLI parameter",
-    "title": "Semantic Release GitHub",
-    "github_id": "R_kgDOGw3kVA",
-    "gitlab_project_id": "33109332",
-    "gitlab_group_id": ""
+    "title": "Semantic Release GitHub"
   },
   "commitlint": {
     "extends": [
