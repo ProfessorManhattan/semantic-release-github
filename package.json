@@ -15,6 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/ProfessorManhattan/semantic-release-github.git"
   },
+  "bugs": {
+    "email": "help@megabyte.space",
+    "url": "https://gitlab.com/megabyte-labs/npm/configs/semantic-release-github/-/issues"
+  },
   "type": "commonjs",
   "main": "index.js",
   "files": [
@@ -216,6 +220,8 @@
       "no-warning-comments": "warn",
       "node/no-missing-require": "warn",
       "padding-line-between-statements": "warn",
+      "prefer-const": "warn",
+      "prefer-destructuring": "warn",
       "prettier/prettier": "warn",
       "regexp/no-super-linear-backtracking": "warn",
       "require-await": "warn",

@@ -7,9 +7,9 @@ tasks:
       - :install:python:requirements
     desc: Build the project
     log:
+      error: Encountered error while building the project with `poetry build`
       start: Building the project with `poetry build`
       success: Successfully built the project
-      error: Encountered error while building the project with `poetry build`
     cmds:
       - task: clean
       - poetry build
