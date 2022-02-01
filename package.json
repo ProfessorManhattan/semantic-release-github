@@ -22,7 +22,8 @@
   "type": "commonjs",
   "main": "index.js",
   "files": [
-    "lib"
+    "lib",
+    "index.js"
   ],
   "scripts": {
     "codecov": "codecov -f coverage/coverage-final.json",
@@ -117,9 +118,6 @@
   "blueprint": {
     "customPackageName": "semantic-release-gh",
     "description": "The official GitHub plugin, modified to accept repositoryUrl as a parameter",
-    "github_id": "R_kgDOGw3kVA",
-    "gitlab_group_id": "",
-    "gitlab_project_id": "33109332",
     "group": "npm",
     "jsonOverrides": {
       "package.json": {
@@ -157,10 +155,10 @@
     "name": "Semantic Release GitHub",
     "overview": "This [semantic-release](https://github.com/semantic-release/semantic-release) plugin is a fork of the official [@semantic-release/github](https://www.npmjs.com/package/@semantic-release/github) plugin. It allows you to specify the `repositoryUrl` (normally inferred from `package.json`) as a configuration parameter. This opens the door to being able to publish with multiple plugins that rely on different values for `repositoryUrl`. [semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config) uses this plugin to publish to GitLab Releases and GitHub Releases from within the same flow.",
     "repository": {
-      "github": "https://github.com/ProfessorManhattan/semantic-release-github",
-      "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/semantic-release-github"
+      "github": "https://github.com/ProfessorManhattan/semantic-release-gh",
+      "gitlab": "https://gitlab.com/megabyte-labs/npm/plugin/semantic-release-gh"
     },
-    "slug": "semantic-release-github",
+    "slug": "semantic-release-gh",
     "subgroup": "plugin",
     "subheader_description": "A tweaked version of the official `@semantic-release/github` plugin that allows you to pass in `repositoryUrl` as a plugin configuration instead of a CLI parameter",
     "title": "Semantic Release GitHub"
