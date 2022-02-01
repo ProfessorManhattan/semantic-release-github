@@ -165,6 +165,16 @@
     "subheader_description": "A tweaked version of the official `@semantic-release/github` plugin that allows you to pass in `repositoryUrl` as a plugin configuration instead of a CLI parameter",
     "title": "Semantic Release GitHub"
   },
+  "changelog": {
+    "displayTypes": [
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "revert"
+    ],
+    "showAuthor": true
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
