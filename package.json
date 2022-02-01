@@ -13,17 +13,16 @@
   "homepage": "https://megabyte.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProfessorManhattan/semantic-release-github.git"
+    "url": "git+https://github.com/ProfessorManhattan/semantic-release-gh.git"
   },
   "bugs": {
     "email": "help@megabyte.space",
-    "url": "https://gitlab.com/megabyte-labs/npm/configs/semantic-release-github/-/issues"
+    "url": "https://gitlab.com/megabyte-labs/npm/plugin/semantic-release-gh/-/issues"
   },
   "type": "commonjs",
   "main": "index.js",
   "files": [
-    "lib",
-    "index.js"
+    "lib"
   ],
   "scripts": {
     "codecov": "codecov -f coverage/coverage-final.json",
